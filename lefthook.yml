@@ -1,2 +1,3 @@
 extends:
   - configs/lint-commit-msg.yml
+  - configs/lint-fmt-staged.yml

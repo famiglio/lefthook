@@ -1,7 +1,7 @@
 {
   "name": "@famiglio/lefthook",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
   "description": "Famiglio's remote Lefthook configs",
   "keywords": [
     "lefthook"
@@ -17,18 +17,47 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "test": "npx lefthook validate"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
-    "commitizen": "^4.3.1",
-    "cz-git": "^1.12.0",
-    "lefthook": "^1.13.6"
+    "commit": "cz",
+    "fmt:check": "prettier . --check",
+    "fmt:fix": "prettier . --write",
+    "lint:check": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "prepare": "lefthook install"
   },
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-git"
     }
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "@cspell/cspell-types": "^9.2.1",
+    "@cspell/eslint-plugin": "^9.2.1",
+    "@eslint/js": "^9.37.0",
+    "@eslint/json": "^0.13.2",
+    "@eslint/markdown": "^7.4.0",
+    "commitizen": "^4.3.1",
+    "cspell": "^9.2.1",
+    "cz-git": "^1.12.0",
+    "eslint": "^9.37.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsdoc": "^61.0.0",
+    "eslint-plugin-node-dependencies": "^1.1.2",
+    "eslint-plugin-package-json": "^0.56.3",
+    "eslint-plugin-prettier": "^5.5.4",
+    "eslint-plugin-simple-import-sort": "^12.1.1",
+    "eslint-plugin-unicorn": "^61.0.2",
+    "globals": "^16.4.0",
+    "jsonc-eslint-parser": "^2.4.1",
+    "lefthook": "^1.13.6",
+    "prettier": "^3.6.2",
+    "prettier-plugin-ini": "^1.3.0",
+    "prettier-plugin-packagejson": "^2.5.19",
+    "prettier-plugin-properties": "^0.3.0",
+    "prettier-plugin-sh": "^0.18.0",
+    "prettier-plugin-toml": "^2.0.6",
+    "typescript-eslint": "^8.46.0"
   }
 }
