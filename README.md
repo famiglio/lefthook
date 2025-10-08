@@ -1,0 +1,2 @@
+# lefthook
+Lefthook configs
