@@ -1,0 +1,34 @@
+{
+  "name": "@famiglio/lefthook",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Famiglio's remote Lefthook configs",
+  "keywords": [
+    "lefthook"
+  ],
+  "homepage": "https://github.com/famiglio/lefthook#readme",
+  "bugs": {
+    "url": "https://github.com/famiglio/lefthook/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/famiglio/lefthook.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "npx lefthook validate"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "commitizen": "^4.3.1",
+    "cz-git": "^1.12.0",
+    "lefthook": "^1.13.6"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-git"
+    }
+  }
+}

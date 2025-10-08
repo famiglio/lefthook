@@ -1,0 +1,19 @@
+pre-commit:
+  jobs:
+    group:
+      parallel: false
+      jobs:
+        - name: lint-staged
+          run: npx eslint --fix {staged_files}
+          exclude:
+            - "*.sh"
+            - "*.toml"
+            - "*.yaml"
+            - "*.yml"
+          staged_fixed: true
+        - name: format-staged
+          run: npx prettier {staged_files} --write
+          glob:
+            - "*.sh"
+            - "*.toml"
+          staged_fixed: true
