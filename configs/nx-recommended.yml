@@ -1,0 +1,4 @@
+extends:
+  - ./lint-commit-msg.yml
+  - ./lint-fmt-staged.yml
+  - ./nx-sync.yml
