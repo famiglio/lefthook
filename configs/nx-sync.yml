@@ -1,5 +1,5 @@
 pre-commit:
   commands:
     nx-sync:
-      run: nx nx-sync
+      run: nx sync
       stage_fixed: true
